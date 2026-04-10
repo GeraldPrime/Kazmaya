@@ -47,11 +47,11 @@ const team = [
     bio: "Drives marketing strategy and operational excellence, ensuring seamless delivery of Kazmaya World's promise to every customer.",
   },
   {
-    name: "Ese Erejuwa",
-    role: "Product Design",
-    initials: "EE",
+    name: "Gerald Okeke",
+    role: "Product Designer & Developer",
+    initials: "GO",
     color: "#a07830",
-    bio: "Creative force behind Kazmaya World's product aesthetic — blending contemporary design with functional elegance.",
+    bio: "Creative force behind Kazmaya World's digital presence and product aesthetic — blending contemporary design with functional elegance.",
   },
 ];
 
@@ -66,9 +66,9 @@ const milestones = [
 
 export default function AboutPage() {
   return (
-    <div className="pt-28">
+    <div>
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden" style={{ minHeight: "460px" }}>
+      <section className="relative overflow-hidden" style={{ minHeight: "460px", paddingTop: "80px" }}>
         <Image
           src="/images/heroes/about-hero.jpg"
           alt="Kazmaya World — fashion lifestyle"
@@ -373,13 +373,12 @@ export default function AboutPage() {
             <div className="divider-gold w-24 mx-auto" />
           </div>
 
-          <div className="relative">
-            {/* Vertical line */}
+          {/* Desktop zigzag timeline */}
+          <div className="relative hidden sm:block">
             <div
               className="absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2"
               style={{ background: "linear-gradient(to bottom, var(--purple-dark), var(--gold))" }}
             />
-
             <div className="flex flex-col gap-8">
               {milestones.map((m, i) => (
                 <div
@@ -399,8 +398,6 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-
-                  {/* Dot */}
                   <div
                     className="relative z-10 w-4 h-4 rounded-full flex-shrink-0"
                     style={{
@@ -408,8 +405,39 @@ export default function AboutPage() {
                       boxShadow: "0 0 0 4px var(--bg), 0 0 0 6px var(--gold)",
                     }}
                   />
-
                   <div className="flex-1" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile timeline — clean left-aligned list */}
+          <div className="relative sm:hidden pl-6">
+            <div
+              className="absolute left-2 top-0 bottom-0 w-0.5"
+              style={{ background: "linear-gradient(to bottom, var(--purple-dark), var(--gold))" }}
+            />
+            <div className="flex flex-col gap-6">
+              {milestones.map((m, i) => (
+                <div key={i} className="relative flex items-start gap-4">
+                  <div
+                    className="absolute -left-5 top-1.5 w-3 h-3 rounded-full flex-shrink-0 z-10"
+                    style={{
+                      background: "linear-gradient(135deg, var(--gold-dark), var(--gold-light))",
+                      boxShadow: "0 0 0 3px var(--bg), 0 0 0 5px var(--gold)",
+                    }}
+                  />
+                  <div className="neu-flat-sm p-4 w-full">
+                    <span
+                      className="font-bold text-sm block mb-1 shimmer-text"
+                      style={{ fontFamily: "'Playfair Display', serif" }}
+                    >
+                      {m.year}
+                    </span>
+                    <p className="text-sm" style={{ color: "var(--text-light)" }}>
+                      {m.event}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>

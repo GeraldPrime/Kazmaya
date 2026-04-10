@@ -126,9 +126,9 @@ export default function CataloguePage() {
   const filtered = filter === "All" ? products : products.filter((p) => p.color === filter);
 
   return (
-    <div className="pt-28">
+    <div>
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden" style={{ minHeight: "420px" }}>
+      <section className="relative overflow-hidden catalogue-hero-section">
         <Image
           src="/images/heroes/catalogue-hero.jpg"
           alt="Kazmaya World shoe collection"
@@ -144,8 +144,7 @@ export default function CataloguePage() {
           }}
         />
         <div
-          className="relative z-10 flex items-center justify-center px-6"
-          style={{ minHeight: "420px" }}
+          className="relative z-10 flex items-end justify-center px-6 catalogue-hero-inner"
         >
           <div style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center" }}>
             <span
@@ -190,9 +189,9 @@ export default function CataloguePage() {
       </section>
 
       {/* ── FILTER BAR ── */}
-      <section className="px-6 pb-8">
+      <section style={{ padding: "2rem 1.5rem 2rem" }}>
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="flex gap-3 flex-wrap">
               {colorFilters.map((f) => (
                 <button
@@ -240,7 +239,7 @@ export default function CataloguePage() {
                 >
                   <span
                     className="absolute top-3 right-3 badge badge-gold-style"
-                    style={{ fontSize: "0.62rem" }}
+                    style={{ fontSize: "0.62rem", zIndex: 10, position: "absolute" }}
                   >
                     {p.tag}
                   </span>

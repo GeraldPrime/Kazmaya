@@ -51,9 +51,9 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="pt-28">
+    <div>
       {/* ── HERO ── */}
-      <section className="relative overflow-hidden" style={{ minHeight: "420px" }}>
+      <section className="relative overflow-hidden" style={{ minHeight: "420px", paddingTop: "80px" }}>
         <Image
           src="/images/heroes/contact-hero.jpg"
           alt="Kazmaya World — elegant footwear"

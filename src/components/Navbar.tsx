@@ -97,49 +97,48 @@ export default function Navbar() {
 
         {/* Mobile burger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2 rounded-xl transition-all"
+          type="button"
+          aria-label="Toggle menu"
+          onClick={() => setOpen((o) => !o)}
           style={{
+            display: "none",
+            flexDirection: "column",
+            gap: "5px",
+            padding: "10px",
+            borderRadius: "12px",
             background: "var(--bg)",
             boxShadow: "4px 4px 10px #c8bfe0, -4px -4px 10px #ffffff",
+            border: "none",
+            cursor: "pointer",
           }}
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
+          className="burger-btn"
         >
-          <span
-            className="block w-6 h-0.5 transition-all duration-300"
-            style={{
-              background: "var(--purple-dark)",
-              transform: open ? "rotate(45deg) translate(4px,4px)" : "none",
-            }}
-          />
-          <span
-            className="block w-6 h-0.5 transition-all duration-300"
-            style={{
-              background: "var(--gold)",
-              opacity: open ? 0 : 1,
-            }}
-          />
-          <span
-            className="block w-6 h-0.5 transition-all duration-300"
-            style={{
-              background: "var(--purple-dark)",
-              transform: open ? "rotate(-45deg) translate(4px,-4px)" : "none",
-            }}
-          />
+          <span style={{ display: "block", width: "24px", height: "2px", background: "var(--purple-dark)", transition: "all 0.3s", transform: open ? "rotate(45deg) translate(5px,5px)" : "none" }} />
+          <span style={{ display: "block", width: "24px", height: "2px", background: "var(--gold)", transition: "all 0.3s", opacity: open ? 0 : 1 }} />
+          <span style={{ display: "block", width: "24px", height: "2px", background: "var(--purple-dark)", transition: "all 0.3s", transform: open ? "rotate(-45deg) translate(5px,-5px)" : "none" }} />
         </button>
       </div>
 
       {/* Mobile menu */}
       <div
-        className="md:hidden overflow-hidden transition-all duration-300"
-        style={{ maxHeight: open ? "400px" : "0" }}
+        className="burger-menu"
+        style={{
+          display: "none",
+          flexDirection: "column",
+          gap: "0",
+          overflow: "hidden",
+          transition: "max-height 0.3s ease, opacity 0.3s ease",
+          maxHeight: open ? "400px" : "0",
+          opacity: open ? 1 : 0,
+        }}
       >
-        <div className="px-6 pb-6 pt-2 flex flex-col gap-4">
+        <div style={{ padding: "0.5rem 1.5rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className={`nav-link text-sm py-2 ${pathname === l.href ? "active" : ""}`}
+              className={`nav-link${pathname === l.href ? " active" : ""}`}
+              style={{ fontSize: "0.9rem", padding: "0.5rem 0", display: "block" }}
               onClick={() => setOpen(false)}
             >
               {l.label}
@@ -147,8 +146,8 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className="neu-btn px-6 py-3 text-sm font-semibold text-center"
-            style={{ color: "var(--purple-dark)" }}
+            className="neu-btn"
+            style={{ padding: "0.75rem 1.5rem", fontSize: "0.9rem", fontWeight: 600, textAlign: "center", color: "var(--purple-dark)", textDecoration: "none", display: "block" }}
             onClick={() => setOpen(false)}
           >
             <span className="gold-text">Order Now</span>

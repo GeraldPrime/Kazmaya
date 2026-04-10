@@ -134,7 +134,7 @@ export default function HomePage() {
             {products.map((p) => (
               <article key={p.id} className="neu-card img-zoom" style={{ padding: 0, overflow: "hidden" }}>
                 <div style={{ height: "220px", display: "flex", alignItems: "center", justifyContent: "center", padding: "1.5rem", position: "relative", background: "linear-gradient(135deg, rgba(107,33,168,0.04), rgba(201,168,76,0.06))", overflow: "hidden" }}>
-                  <span className="badge badge-gold-style" style={{ position: "absolute", top: "10px", right: "10px", fontSize: "0.62rem" }}>{p.tag}</span>
+                  <span className="badge badge-gold-style" style={{ position: "absolute", top: "10px", right: "10px", fontSize: "0.62rem", zIndex: 10 }}>{p.tag}</span>
                   <Image src={p.img} alt={p.name} width={190} height={170} style={{ objectFit: "contain", filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.18))" }} />
                   <span style={{ position: "absolute", bottom: "10px", left: "10px", width: "12px", height: "12px", borderRadius: "50%", background: p.color === "Black" ? "#1a1a2e" : "#6b3a2a", border: "2px solid white", boxShadow: "0 2px 6px rgba(0,0,0,0.3)" }} />
                 </div>
