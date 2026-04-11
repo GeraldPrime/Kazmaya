@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const products = [
-  { id: 1, name: "Classic Black Mary Jane", desc: "Elegant T-bar school shoe with perforated heart detailing", img: "/images/processed/shoe-black-front.png", tag: "Bestseller", color: "Black", cat: "Girls' School" },
-  { id: 2, name: "Premium Black T-Bar", desc: "Durable buckle-strap school shoe, premium leather finish", img: "/images/processed/shoe-black-side.png", tag: "New Arrival", color: "Black", cat: "Girls' School" },
-  { id: 3, name: "Nova Black — Made in Nigeria", desc: "Proudly Nigerian-made school shoe, superior craftsmanship", img: "/images/processed/shoe-nova-black.png", tag: "Local Pride", color: "Black", cat: "Girls' School" },
-  { id: 4, name: "Rich Brown Leather", desc: "Classic brown T-bar with gold-tone buckle hardware", img: "/images/processed/shoe-brown-side1.png", tag: "Popular", color: "Brown", cat: "Girls' School" },
-  { id: 5, name: "Black Comfort Pair", desc: "Velcro-strap school shoes for all-day comfort", img: "/images/processed/shoe-black-pair1.png", tag: "Comfort Fit", color: "Black", cat: "Girls' School" },
-  { id: 6, name: "Dark Brown Classic", desc: "Rich leather T-strap with decorative perforations", img: "/images/processed/shoe-brown-side2.png", tag: "Classic", color: "Brown", cat: "Girls' School" },
-  { id: 7, name: "Black Brogue Pair", desc: "Heart-perforated T-bar pair, elegant school wear", img: "/images/processed/shoe-black-pair2.png", tag: "Trendy", color: "Black", cat: "Girls' School" },
-  { id: 8, name: "Chestnut Brown Pair", desc: "Rich chestnut T-bar pair with contrast stitching", img: "/images/processed/shoe-brown-pair.png", tag: "Premium", color: "Brown", cat: "Girls' School" },
+  { id: 1, name: "Classic Black Mary Jane", desc: "Elegant T-bar school shoe with perforated heart detailing", img: "/images/processed/shoe-black-front.png", tag: "Bestseller", color: "Black", cat: "School Shoes" },
+  { id: 2, name: "Premium Black T-Bar", desc: "Durable buckle-strap school shoe, premium leather finish", img: "/images/processed/shoe-black-side.png", tag: "New Arrival", color: "Black", cat: "School Shoes" },
+  { id: 3, name: "Nova Black — Made in Nigeria", desc: "Proudly Nigerian-made school shoe, superior craftsmanship", img: "/images/processed/shoe-nova-black.png", tag: "Local Pride", color: "Black", cat: "School Shoes" },
+  { id: 4, name: "Rich Brown Leather", desc: "Classic brown T-bar with gold-tone buckle hardware", img: "/images/processed/shoe-brown-side1.png", tag: "Popular", color: "Brown", cat: "School Shoes" },
+  { id: 5, name: "Black Comfort Pair", desc: "Velcro-strap school shoes for all-day comfort", img: "/images/processed/shoe-black-pair1.png", tag: "Comfort Fit", color: "Black", cat: "School Shoes" },
+  { id: 6, name: "Dark Brown Classic", desc: "Rich leather T-strap with decorative perforations", img: "/images/processed/shoe-brown-side2.png", tag: "Classic", color: "Brown", cat: "School Shoes" },
+  { id: 7, name: "Black Brogue Pair", desc: "Heart-perforated T-bar pair, elegant school wear", img: "/images/processed/shoe-black-pair2.png", tag: "Trendy", color: "Black", cat: "School Shoes" },
+  { id: 8, name: "Chestnut Brown Pair", desc: "Rich chestnut T-bar pair with contrast stitching", img: "/images/processed/shoe-brown-pair.png", tag: "Premium", color: "Brown", cat: "School Shoes" },
   { id: 9, name: "Comfylatch Velcro School Shoe", desc: "Easy-on velcro strap school shoe, built for active school days", img: "/images/shoe-comfylatch-black.jpeg", tag: "School Ready", color: "Black", cat: "School Shoes" },
   { id: 10, name: "Naija Stylez Tassel Loafer", desc: "Proudly Nigerian tassel loafers with high-gloss leather finish", img: "/images/shoe-naijastylez-black.jpeg", tag: "Made in Nigeria", color: "Black", cat: "Formal Shoes" },
   { id: 11, name: "LUXSTEP Premium Slip-On", desc: "Premium leather slip-on with elastic gusset for all-day comfort", img: "/images/shoe-luxstep-black.jpeg", tag: "Luxury", color: "Black", cat: "Formal Shoes" },

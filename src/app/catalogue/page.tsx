@@ -12,7 +12,7 @@ const products = [
     img: "/images/processed/shoe-black-front.png",
     tag: "Bestseller",
     color: "Black",
-    cat: "Girls' School Shoes",
+    cat: "School Shoes",
     features: ["Genuine leather upper", "Cushioned insole", "Non-slip sole", "T-bar buckle"],
   },
   {
@@ -22,7 +22,7 @@ const products = [
     img: "/images/processed/shoe-black-side.png",
     tag: "New Arrival",
     color: "Black",
-    cat: "Girls' School Shoes",
+    cat: "School Shoes",
     features: ["Premium leather", "Silver buckle", "Padded collar", "Breathable lining"],
   },
   {
@@ -32,27 +32,27 @@ const products = [
     img: "/images/processed/shoe-nova-black.png",
     tag: "Local Pride",
     color: "Black",
-    cat: "Girls' School Shoes",
+    cat: "School Shoes",
     features: ["Made in Nigeria", "Quality assured", "Buckle strap", "Durable sole"],
   },
   {
     id: 4,
-    name: "Rich Brown Leather Side",
+    name: "Rich Brown Leather",
     desc: "Classic brown T-bar with gold-tone buckle hardware. Rich chocolate-brown leather with contrasting stitching.",
     img: "/images/processed/shoe-brown-side1.png",
     tag: "Popular",
     color: "Brown",
-    cat: "Girls' School Shoes",
+    cat: "School Shoes",
     features: ["Chocolate leather", "Gold buckle", "T-bar design", "Robust sole"],
   },
   {
     id: 5,
-    name: "Black Comfort Pair",
+    name: "Black Comfort Velcro",
     desc: "Velcro-strap school shoes for all-day comfort. Easy on, easy off — perfect for younger pupils.",
     img: "/images/processed/shoe-black-pair1.png",
     tag: "Comfort Fit",
     color: "Black",
-    cat: "Girls' School Shoes",
+    cat: "School Shoes",
     features: ["Velcro fastening", "Memory foam insole", "Wide toe box", "Easy to wear"],
   },
   {
@@ -62,17 +62,17 @@ const products = [
     img: "/images/processed/shoe-brown-side2.png",
     tag: "Classic",
     color: "Brown",
-    cat: "Girls' School Shoes",
+    cat: "School Shoes",
     features: ["Dark brown leather", "Decorative perforations", "T-strap design", "Durable"],
   },
   {
     id: 7,
     name: "Black Brogue Pair",
-    desc: "Heart-perforated T-bar pair, elegant school wear. Beautiful brogue detailing with a modern touch.",
+    desc: "Heart-perforated T-bar pair. Beautiful brogue detailing with a modern touch.",
     img: "/images/processed/shoe-black-pair2.png",
     tag: "Trendy",
     color: "Black",
-    cat: "Girls' School Shoes",
+    cat: "School Shoes",
     features: ["Brogue detailing", "Heart perforations", "Buckle strap", "Premium finish"],
   },
   {
@@ -82,12 +82,12 @@ const products = [
     img: "/images/processed/shoe-brown-pair.png",
     tag: "Premium",
     color: "Brown",
-    cat: "Girls' School Shoes",
+    cat: "School Shoes",
     features: ["Chestnut leather", "Contrast stitching", "Kazmaya branded", "Gold buckle"],
   },
   {
     id: 9,
-    name: "Comfylatch Velcro School Shoe",
+    name: "Comfylatch Velcro",
     desc: "Easy-on velcro strap school shoe — durable, comfortable, and built for active school days. No laces needed.",
     img: "/images/shoe-comfylatch-black.jpeg",
     tag: "School Ready",
@@ -98,11 +98,11 @@ const products = [
   {
     id: 10,
     name: "Naija Stylez Tassel Loafer",
-    desc: "Proudly Nigerian tassel loafers with a high-gloss leather finish. Smart and stylish for formal occasions.",
+    desc: "Proudly Nigerian tassel loafers with a high-gloss leather finish. Smart and stylish.",
     img: "/images/shoe-naijastylez-black.jpeg",
     tag: "Made in Nigeria",
     color: "Black",
-    cat: "Formal Shoes",
+    cat: "School Shoes",
     features: ["Tassel detail", "High-gloss leather", "Nigerian made", "Slip-on style"],
   },
   {
@@ -112,18 +112,120 @@ const products = [
     img: "/images/shoe-luxstep-black.jpeg",
     tag: "Luxury",
     color: "Black",
-    cat: "Formal Shoes",
+    cat: "School Shoes",
     features: ["Full-grain leather", "Elastic gusset", "Cushioned footbed", "Sleek profile"],
+  },
+  {
+    id: 12,
+    name: "PlayPro Tassel Loafer",
+    desc: "Proudly made in Nigeria — PlayPro tassel loafer with a glossy finish. Built for school, styled for confidence.",
+    img: "/images/shoe-playpro-black.jpeg",
+    tag: "Made in Nigeria",
+    color: "Black",
+    cat: "School Shoes",
+    features: ["Nigerian made", "Tassel detail", "Glossy leather", "Durable sole"],
+  },
+  {
+    id: 13,
+    name: "Classact Velcro",
+    desc: "The Classact — velcro strap school shoe proudly made in Nigeria. Classy, comfortable, and built to last.",
+    img: "/images/shoe-classact-black.jpeg",
+    tag: "Made in Nigeria",
+    color: "Black",
+    cat: "School Shoes",
+    features: ["Nigerian made", "Velcro strap", "Premium leather", "Cushioned insole"],
+  },
+  {
+    id: 14,
+    name: "Voyager Lace-Up",
+    desc: "Be Bold with the Voyager — lace-up school shoe made in Nigeria. Smart Oxford silhouette for everyday wear.",
+    img: "/images/shoe-voyager-black.jpeg",
+    tag: "Be Bold",
+    color: "Black",
+    cat: "School Shoes",
+    features: ["Nigerian made", "Lace-up style", "Oxford silhouette", "Robust sole"],
+  },
+  {
+    id: 15,
+    name: "Rosie Velcro Cutout",
+    desc: "Rosie — velcro cutout school shoe made in Nigeria. Lightweight perforated design for breathable all-day wear.",
+    img: "/images/shoe-rosie-black.jpeg",
+    tag: "Made in Nigeria",
+    color: "Black",
+    cat: "School Shoes",
+    features: ["Nigerian made", "Perforated design", "Velcro strap", "Breathable"],
+  },
+  {
+    id: 16,
+    name: "Astro Brogue Lace-Up",
+    desc: "The Astro — bold brogue lace-up made in Nigeria. Premium perforated detailing with a smart Oxford finish.",
+    img: "/images/shoe-astro-black.jpeg",
+    tag: "Made in Nigeria",
+    color: "Black",
+    cat: "School Shoes",
+    features: ["Nigerian made", "Brogue detailing", "Lace-up", "Oxford finish"],
+  },
+  {
+    id: 17,
+    name: "Coco Slip-On",
+    desc: "The Coco — sleek slip-on school shoe made in Nigeria. Effortless style with a cushioned, comfortable fit.",
+    img: "/images/shoe-coco-black.jpeg",
+    tag: "Made in Nigeria",
+    color: "Black",
+    cat: "School Shoes",
+    features: ["Nigerian made", "Slip-on style", "Cushioned fit", "Sleek leather"],
+  },
+  {
+    id: 18,
+    name: "Xmas Tree Tee — Black",
+    desc: "Festive Christmas tree print unisex T-shirt. Fun, bold, and perfect for the holiday season.",
+    img: "/images/shirt-xmas-black.jpg",
+    tag: "Festive",
+    color: "Black",
+    cat: "Fashion",
+    features: ["Unisex fit", "Festive print", "Soft fabric", "Holiday edition"],
+  },
+  {
+    id: 19,
+    name: "Xmas Reindeer Tee — White",
+    desc: "Classic white reindeer & Christmas tree print T-shirt. A wardrobe staple for the festive season.",
+    img: "/images/shirt-xmas-white.jpg",
+    tag: "Festive",
+    color: "White",
+    cat: "Fashion",
+    features: ["Unisex fit", "Reindeer print", "Soft fabric", "Holiday edition"],
+  },
+  {
+    id: 20,
+    name: "Reindeer Fairisle Tee — Black",
+    desc: "Bold fairisle reindeer pattern on premium black tee. Stand out this Christmas in style.",
+    img: "/images/shirt-reindeer-black.jpg",
+    tag: "Festive",
+    color: "Black",
+    cat: "Fashion",
+    features: ["Unisex fit", "Fairisle pattern", "Premium fabric", "Holiday edition"],
+  },
+  {
+    id: 21,
+    name: "Merry Christmas Tee",
+    desc: "Say it loud — Merry Christmas! Festive graphic tee perfect for the holiday season.",
+    img: "/images/shirt-merrychristmas-black.jpg",
+    tag: "Festive",
+    color: "Black",
+    cat: "Fashion",
+    features: ["Unisex fit", "Graphic print", "Soft fabric", "Holiday edition"],
   },
 ];
 
-const colorFilters = ["All", "Black", "Brown"];
+const colorFilters = ["All", "Black", "Brown", "White"];
 
 export default function CataloguePage() {
   const [filter, setFilter] = useState("All");
   const [selected, setSelected] = useState<typeof products[0] | null>(null);
 
-  const filtered = filter === "All" ? products : products.filter((p) => p.color === filter);
+  const filtered = filter === "All" ? products
+    : filter === "Fashion" ? products.filter((p) => p.cat === "Fashion")
+    : products.filter((p) => p.color === filter);
 
   return (
     <div>
@@ -212,8 +314,14 @@ export default function CataloguePage() {
                         }
                   }
                 >
-                  {f === "Black" ? "⚫ Black" : f === "Brown" ? "🟤 Brown" : "✦ All Styles"}{" "}
-                  {f !== "All" && `(${products.filter((p) => p.color === f).length})`}
+                  {f === "Black" ? "⚫ Black"
+                    : f === "Brown" ? "🟤 Brown"
+                    : f === "White" ? "⚪ White"
+                    : f === "Fashion" ? "👕 Fashion"
+                    : "✦ All Styles"}{" "}
+                  {f === "Fashion" ? `(${products.filter((p) => p.cat === "Fashion").length})`
+                    : f !== "All" ? `(${products.filter((p) => p.color === f && p.cat !== "Fashion").length})`
+                    : ""}
                 </button>
               ))}
             </div>

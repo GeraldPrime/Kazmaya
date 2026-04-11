@@ -47,11 +47,18 @@ const team = [
     bio: "Drives marketing strategy and operational excellence, ensuring seamless delivery of Kazmaya World's promise to every customer.",
   },
   {
+    name: "Ese Erejuwa",
+    role: "Product Design",
+    initials: "EE",
+    color: "#a07830",
+    bio: "Creative force behind Kazmaya World's product aesthetic — blending contemporary design with functional elegance.",
+  },
+  {
     name: "Gerald Okeke",
     role: "Product Designer & Developer",
     initials: "GO",
-    color: "#a07830",
-    bio: "Creative force behind Kazmaya World's digital presence and product aesthetic — blending contemporary design with functional elegance.",
+    color: "#7c3aed",
+    bio: "Leads digital product design and development, bringing Kazmaya World's brand to life across all digital touchpoints.",
   },
 ];
 
